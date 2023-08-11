@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="radio5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Polygon fill="#edf6ff" layoutX="78.0" layoutY="456.0" points="-57.0, 110.0, 803.5999755859375, 110.0, 803.5999755859375, -28.999969482421875, -57.0, -29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#edf6ff" layoutX="78.0" layoutY="273.0" points="-56.99999237060547, 139.80001831054688, 804.4000244140625, 139.80001831054688, 804.4000244140625, -29.0, -57.0, -29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#edf6ff" layoutX="78.0" layoutY="43.0" points="-57.0, 61.0, 802.800048828125, 60.99999237060547, 802.800048828125, -29.0000057220459, -57.0, -29.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button id="button4" fx:id="button4" layoutX="215.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Влево (на Восток)" />
+      <Button id="button8" fx:id="button8" layoutX="642.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Вправо (на Запад)" />
+      <Label id="myLabel2" fx:id="myLabel2" alignment="CENTER" layoutX="408.0" layoutY="258.0" prefHeight="19.0" prefWidth="215.0" text="Управление атенной">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button id="button1" fx:id="button1" layoutX="343.0" layoutY="50.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Открыть порт" />
+      <Button id="button2" fx:id="button2" layoutX="459.0" layoutY="50.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Закрыть порт" />
+      <TextField id="textField1" fx:id="textField1" layoutX="77.0" layoutY="47.0" prefHeight="31.0" prefWidth="75.0" />
+      <Label alignment="CENTER" layoutX="26.0" layoutY="54.0" prefHeight="19.0" prefWidth="52.0" text="Порт:" />
+      <Button id="button3" fx:id="button3" layoutX="177.0" layoutY="50.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Сохранить" />
+      <Label id="myLabel1" fx:id="myLabel1" alignment="CENTER" layoutX="361.0" layoutY="23.0" prefHeight="19.0" prefWidth="174.0" text="Подключение" />
+      <ImageView id="imageA4" fx:id="imageA4" fitHeight="34.0" fitWidth="34.0" layoutX="831.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/button_grey.png" />
+         </image>
+      </ImageView>
+      <Button id="button5" fx:id="button5" layoutX="395.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="-1" />
+      <Button id="button7" fx:id="button7" layoutX="559.0" layoutY="294.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="+1" />
+      <Button id="button6" fx:id="button6" layoutX="478.0" layoutY="296.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="75.0" text="Стоп" />
+      <Label alignment="CENTER" layoutX="148.0" layoutY="122.0" prefHeight="20.0" prefWidth="174.0" text="АЗИМУТ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="button9" fx:id="button9" layoutX="215.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Вниз" />
+      <Button id="button13" fx:id="button13" layoutX="642.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Вверх" />
+      <Button id="button10" fx:id="button10" layoutX="395.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="-1" />
+      <Button id="button12" fx:id="button12" layoutX="559.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="+1" />
+      <Button id="button11" fx:id="button11" layoutX="78.0" layoutY="526.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Задать" />
+      <Label alignment="CENTER" layoutX="448.0" layoutY="124.0" prefHeight="20.0" prefWidth="146.0" text="УГОЛ МЕСТА" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="455.0" prefHeight="20.0" prefWidth="146.0" text="КОНЦЕВИКИ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="22.0" prefHeight="19.0" prefWidth="215.0" text="НАСТРОЙКИ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="button14" fx:id="button14" layoutX="651.0" layoutY="51.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="ВКЛ." />
+      <Button id="button15" fx:id="button15" layoutX="735.0" layoutY="50.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="ВЫКЛ." />
+      <Label alignment="CENTER" layoutX="648.0" layoutY="23.0" prefHeight="19.0" prefWidth="161.0" text="Питание двигателей" />
+      <ImageView id="imageA1" fx:id="imageA1" fitHeight="34.0" fitWidth="34.0" layoutX="831.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/button_grey.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imageA2" fx:id="imageA2" fitHeight="127.0" fitWidth="174.0" layoutX="21.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/antenna-1.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imageA3" fx:id="imageA3" fitHeight="127.0" fitWidth="174.0" layoutX="313.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/antenna-2.png" />
+         </image>
+      </ImageView>
+      <TextField id="textField2" fx:id="textField2" alignment="CENTER" layoutX="160.0" layoutY="144.0" prefHeight="51.0" prefWidth="146.0" text="145:00">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </TextField>
+      <TextField id="textField3" fx:id="textField3" alignment="CENTER" layoutX="448.0" layoutY="146.0" prefHeight="51.0" prefWidth="146.0" text="24:00">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </TextField>
+      <ImageView id="imageA5" fx:id="imageA5" fitHeight="19.0" fitWidth="14.0" layoutX="238.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/koncevik-1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="198.0" layoutY="437.0" prefHeight="20.0" prefWidth="174.0" text="АЗИМУТ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="422.0" layoutY="437.0" prefHeight="20.0" prefWidth="174.0" text="УГОЛ МЕСТА">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView id="imageA6" fx:id="imageA6" fitHeight="19.0" fitWidth="14.0" layoutX="320.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/koncevik-2.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imageA7" fx:id="imageA7" fitHeight="19.0" fitWidth="14.0" layoutX="465.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/koncevik-1.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imageA8" fx:id="imageA8" fitHeight="19.0" fitWidth="14.0" layoutX="548.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/koncevik-2.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="497.0" prefHeight="20.0" prefWidth="146.0" text="ПРЕДЕЛЫ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="textField4" fx:id="textField4" alignment="CENTER" layoutX="207.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" text="110:00" />
+      <TextField id="textField5" fx:id="textField5" alignment="CENTER" layoutX="290.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" text="237:00" />
+      <TextField id="textField6" fx:id="textField6" alignment="CENTER" layoutX="434.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" text="02:00" />
+      <TextField id="textField7" fx:id="textField7" alignment="CENTER" layoutX="517.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" text="88:00" />
+      <Label id="myLabel3" fx:id="myLabel3" alignment="CENTER" layoutX="162.0" layoutY="209.0" prefHeight="19.0" prefWidth="146.0" text="Шаги: 24500" />
+      <Label id="myLabel4" fx:id="myLabel4" alignment="CENTER" layoutX="448.0" layoutY="207.0" prefHeight="19.0" prefWidth="146.0" text="Шаги: 24500" />
+      <Label alignment="CENTER" layoutX="43.0" layoutY="297.0" prefHeight="20.0" prefWidth="146.0" text="АЗИМУТ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="333.0" prefHeight="20.0" prefWidth="146.0" text="УГОЛ МЕСТА" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="369.0" prefHeight="20.0" prefWidth="146.0" text="ПОЛЯРИЗАЦИЯ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="button16" fx:id="button16" layoutX="215.0" layoutY="366.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Влево" />
+      <Button id="button19" fx:id="button19" layoutX="642.0" layoutY="366.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="174.0" text="Вправо" />
+      <Button id="button17" fx:id="button17" layoutX="395.0" layoutY="366.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="-1" />
+      <Button id="button18" fx:id="button18" layoutX="559.0" layoutY="366.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="+1" />
+      <Label alignment="CENTER" layoutX="729.0" layoutY="124.0" prefHeight="20.0" prefWidth="146.0" text="ПОЛЯРИЗАЦИЯ" textFill="#002bff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView id="imageA9" fx:id="imageA9" fitHeight="127.0" fitWidth="174.0" layoutX="598.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/antenna-3.png" />
+         </image>
+      </ImageView>
+      <TextField id="textField8" fx:id="textField8" alignment="CENTER" layoutX="729.0" layoutY="146.0" prefHeight="51.0" prefWidth="146.0" text="0:00">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </TextField>
+      <Label id="myLabel5" fx:id="myLabel41" alignment="CENTER" layoutX="729.0" layoutY="207.0" prefHeight="19.0" prefWidth="146.0" text="Шаги: 24500" />
+      <Label alignment="CENTER" layoutX="639.0" layoutY="437.0" prefHeight="20.0" prefWidth="174.0" text="ПОЛЯРИЗАЦИЯ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView id="imageA10" fx:id="imageA10" fitHeight="19.0" fitWidth="14.0" layoutX="678.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/koncevik-1.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imageA11" fx:id="imageA11" fitHeight="19.0" fitWidth="14.0" layoutX="761.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/koncevik-2.png" />
+         </image>
+      </ImageView>
+      <TextField id="textField9" fx:id="textField9" alignment="CENTER" layoutX="647.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" text="00:00" />
+      <TextField id="textField10" fx:id="textField10" alignment="CENTER" layoutX="730.0" layoutY="524.0" prefHeight="31.0" prefWidth="75.0" text="90:00" />
+
+   </children>
+</AnchorPane>
