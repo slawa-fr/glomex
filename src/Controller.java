@@ -14,6 +14,7 @@ import java.io.*;
 import java.net.URL;
 import java.util.Properties;
 
+
 // https://habr.com/ru/articles/340630/
 // Эксперимент 2
 // Зачем нужно соединять Java-программу на компьютере и Arduino?
