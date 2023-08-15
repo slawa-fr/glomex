@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="radio5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<AnchorPane id="radio5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <Polygon fill="#edf6ff" layoutX="78.0" layoutY="456.0" points="-57.0, 110.0, 803.5999755859375, 110.0, 803.5999755859375, -28.999969482421875, -57.0, -29.0" stroke="BLACK" strokeType="INSIDE" />
       <Polygon fill="#edf6ff" layoutX="78.0" layoutY="273.0" points="-56.99999237060547, 139.80001831054688, 804.4000244140625, 139.80001831054688, 804.4000244140625, -29.0, -57.0, -29.0" stroke="BLACK" strokeType="INSIDE" />
@@ -26,7 +26,7 @@
       <Label alignment="CENTER" layoutX="26.0" layoutY="54.0" prefHeight="19.0" prefWidth="52.0" text="Порт:" />
       <Button id="button3" fx:id="button3" layoutX="177.0" layoutY="50.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Сохранить" />
       <Label id="myLabel1" fx:id="myLabel1" alignment="CENTER" layoutX="361.0" layoutY="23.0" prefHeight="19.0" prefWidth="174.0" text="Подключение" />
-      <ImageView id="imageA4" fx:id="imageA4" fitHeight="34.0" fitWidth="34.0" layoutX="831.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView id="imageA4" fx:id="imageA4" fitHeight="34.0" fitWidth="34.0" layoutX="831.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@resources/button_grey.png" />
          </image>

@@ -127,19 +127,14 @@ public class Controller extends Component {
         button4.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('1');
                 arduino.serialWrite('4');
                 lamp = "49";
                 myLabel2.setText("Влево (на Восток)");
-                imageA1.setImage(new Image("button_green.png"));
-                imageA4.setImage(new Image("button_green.png"));
-//                test();
 
             } catch (NullPointerException e) {
                 System.out.println("Нет связи с Arduino");
                 myLabel2.setText("Нет связи с Arduino");
             }
-//            saveToPropertiesSetting();
         });
 //Нажатие на кнопку button4 (Влево (на Восток)) - конец
 
@@ -148,17 +143,13 @@ public class Controller extends Component {
         button5.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('1');
                 arduino.serialWrite('5');
                 lamp = "49";
                 myLabel2.setText("Влево (на Восток) на 1 шаг");
-                imageA1.setImage(new Image("button_green.png"));
-                imageA4.setImage(new Image("button_green.png"));
             } catch (NullPointerException e) {
                 System.out.println("Нет связи с Arduino");
                 myLabel2.setText("Нет связи с Arduino");
             }
-            saveToPropertiesSetting();
         });
 //Нажатие на кнопку button5 (-1) - конец
 
@@ -166,17 +157,13 @@ public class Controller extends Component {
         button6.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('0');
                 arduino.serialWrite('6');
                 lamp = "48";
                 myLabel2.setText("Стоп");
-                imageA1.setImage(new Image("button_grey.png"));
-                imageA4.setImage(new Image("button_grey.png"));
             } catch (NullPointerException e) {
                 System.out.println("Нет связи с Arduino");
                 myLabel2.setText("Нет связи с Arduino");
             }
-            saveToPropertiesSetting();
         });
 //Нажатие на кнопку button5 (Стоп) - конец
 
@@ -184,17 +171,14 @@ public class Controller extends Component {
         button7.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('1');
+
                 arduino.serialWrite('7');
                 lamp = "49";
                 myLabel2.setText("Вправо (на Запад) на 1 шаг");
-                imageA1.setImage(new Image("button_green.png"));
-                imageA4.setImage(new Image("button_green.png"));
             } catch (NullPointerException e) {
                 System.out.println("Нет связи с Arduino");
                 myLabel2.setText("Нет связи с Arduino");
             }
-            saveToPropertiesSetting();
         });
 //Нажатие на кнопку button7 (+1) - конец
 
@@ -203,20 +187,15 @@ public class Controller extends Component {
         button8.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('1');
                 arduino.serialWrite('8');
                 lamp = "49";
                 myLabel2.setText("Вправо (на Запад)");
-                imageA1.setImage(new Image("button_green.png"));
-                imageA4.setImage(new Image("button_green.png"));
             } catch (NullPointerException e) {
                 System.out.println("Нет связи с Arduino");
                 myLabel2.setText("Нет связи с Arduino");
             }
-//            saveToPropertiesSetting();
         });
 //Нажатие на кнопку button8 (Вправо (на Запад)) - конец
-
 
 
 //Нажатие на кнопку button14 (Питание на двигатели ВКЛ.) - начало
@@ -244,35 +223,6 @@ public class Controller extends Component {
 //Нажатие на кнопку button15 (Питание на двигатели ВЫКЛ.) - конец
 
     }
-
-
-
-
-
-        void test(){
-// OK - но срабатывает только один раз
-//            String stepAz = arduino.serialRead();
-//            System.out.println(stepAz);
-//            myLabel3.setText("Шаги: " + stepAz);
-// OK
-
-
-            for (int i=0; i<50; i++) {
-                System.out.println("i = " + i);
-                String stepAz = arduino.serialRead();
-                System.out.println("stepAz = " + stepAz);
-                textField2.appendText(stepAz);
-                if(stepAz.trim().equals(" ")){
-                    //myLabel3.setText("Шаги: " + stepAz);
-                    textField2.appendText(stepAz);
-                }
-
-
-            }
-
-        }
-
-
 
     void createFile1(){
         File file1 = null;
