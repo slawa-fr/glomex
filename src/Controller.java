@@ -70,7 +70,7 @@ public class Controller extends Component {
         textField1.setText(String.valueOf(comPortNumber));
 
         //Arduino arduino = new Arduino("COM4", 9600);
-        arduino = new Arduino(comPortNumber, 9600);
+        arduino = new Arduino(comPortNumber, 115200);
         connected = arduino.openConnection();
         myLabel1.setText("Порт открыт");
         imageA1.setImage(new Image("button_grey.png"));
@@ -107,9 +107,10 @@ public class Controller extends Component {
 
 //Нажатие на кнопку button3 (Сохранить) - начало
         button3.setOnAction(event -> {
-            saveToPropertiesSetting();
+
             comPortNumber = textField1.getText();
-            arduino = new Arduino(comPortNumber, 9600);
+            saveToPropertiesSetting();
+            arduino = new Arduino(comPortNumber, 115200);
 
 // Эксперимент 2
             SerialPort[] ports = SerialPort.getCommPorts();
