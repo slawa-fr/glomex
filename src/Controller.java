@@ -209,7 +209,7 @@ public class Controller extends Component {
         button9.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('a');
+                arduino.serialWrite('d');
                 lamp = "49";
                 myLabel2.setText("Вниз");
 
@@ -225,7 +225,7 @@ public class Controller extends Component {
         button10.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('b');
+                arduino.serialWrite('f');
                 lamp = "49";
                 myLabel2.setText("Вниз на 1 шаг");
             } catch (NullPointerException e) {
@@ -241,7 +241,7 @@ public class Controller extends Component {
 
             try {
 
-                arduino.serialWrite('d');
+                arduino.serialWrite('h');
                 lamp = "49";
                 myLabel2.setText("Вверх на 1 шаг");
             } catch (NullPointerException e) {
@@ -256,7 +256,7 @@ public class Controller extends Component {
         button13.setOnAction(event -> {
 
             try {
-                arduino.serialWrite('e');
+                arduino.serialWrite('j');
                 lamp = "49";
                 myLabel2.setText("Вверх");
             } catch (NullPointerException e) {
