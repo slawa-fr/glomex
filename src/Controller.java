@@ -20,6 +20,8 @@ import java.util.Properties;
 // Зачем нужно соединять Java-программу на компьютере и Arduino?
 // https://temofeev.ru/info/articles/zachem-nuzhno-soedinyat-java-programmu-na-kompyutere-i-arduino/
 
+
+
 public class Controller extends Component {
 
     private  static final String CURRENTDIRECTORY = "user.dir";
@@ -268,6 +270,68 @@ public class Controller extends Component {
 
 
 
+
+// Поляризация
+//Нажатие на кнопку button16 (Влево) - начало
+        button16.setOnAction(event -> {
+
+            try {
+                arduino.serialWrite('r');
+                lamp = "49";
+                myLabel2.setText("Влево");
+
+            } catch (NullPointerException e) {
+                System.out.println("Нет связи с Arduino");
+                myLabel2.setText("Нет связи с Arduino");
+            }
+        });
+//Нажатие на кнопку button9 (Вниз)) - конец
+
+
+//Нажатие на кнопку button17 (-1) - начало
+        button17.setOnAction(event -> {
+
+            try {
+                arduino.serialWrite('t');
+                lamp = "49";
+                myLabel2.setText("Влево на 1 шаг");
+            } catch (NullPointerException e) {
+                System.out.println("Нет связи с Arduino");
+                myLabel2.setText("Нет связи с Arduino");
+            }
+        });
+//Нажатие на кнопку button17 (-1) - конец
+
+
+//Нажатие на кнопку button18 (+1) - начало
+        button18.setOnAction(event -> {
+
+            try {
+
+                arduino.serialWrite('u');
+                lamp = "49";
+                myLabel2.setText("Вправо на 1 шаг");
+            } catch (NullPointerException e) {
+                System.out.println("Нет связи с Arduino");
+                myLabel2.setText("Нет связи с Arduino");
+            }
+        });
+//Нажатие на кнопку button18 (+1) - конец
+
+
+//Нажатие на кнопку button19 (Вправо)) - начало
+        button19.setOnAction(event -> {
+
+            try {
+                arduino.serialWrite('i');
+                lamp = "49";
+                myLabel2.setText("Вправо");
+            } catch (NullPointerException e) {
+                System.out.println("Нет связи с Arduino");
+                myLabel2.setText("Нет связи с Arduino");
+            }
+        });
+//Нажатие на кнопку button13 (Вверх)) - конец
 
 
 
